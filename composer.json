@@ -1,0 +1,38 @@
+{
+    "name": "gcoffee/framework",
+    "description": "The gCoffee Framework",
+    "keywords": ["framework", "gcoffee"],
+    "license": "MIT",
+    "homepage": "https://gcoffee.com",
+    "autoload": {
+        "files": [
+            "src/Machine/Support/helpers.php",
+            "src/Machine/Support/system.php",
+            "src/Machine/Support/Injectors/Triggers.php"
+        ],
+        "psr-4": {
+            "Machine\\": "src/Machine"
+        }
+    },
+    "authors": [
+        {
+            "name": "Geraldo Freitas",
+            "email": "geraldodrfreitas@outlook.com"
+        }
+    ],
+    "require": {
+   	"php": "^8.0.2",
+    	"php-di/php-di": "^6.4",
+        "phpmailer/phpmailer": "v6.6.0",
+        "vlucas/phpdotenv": "v5.4.1",
+        "monolog/monolog": "2.5.*",
+        "league/oauth2-facebook": "2.0.*",
+        "guzzlehttp/guzzle": "^6.5|^7.0.1",
+        "firebase/php-jwt": "^6.3",
+        "dompdf/dompdf": "v2.0.1",
+        "league/csv": "9.8.0"
+    },
+    "replace": {
+        "gcoffee/view": "self.version"
+    }
+}
